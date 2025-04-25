@@ -28,3 +28,9 @@ function drawMatrix() {
 }
 
 setInterval(drawMatrix, 50);
+
+function canvasResize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  drawMatrix();
+}
